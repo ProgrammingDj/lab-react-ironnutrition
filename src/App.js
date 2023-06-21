@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import FoodBox from './components/FoodBox'
 import foods from './foods.json';
 import { useState } from 'react';
 import { Card, Row, Col, Divider, Input, Button } from 'antd';
@@ -24,8 +25,7 @@ function App() {
             return (
               
                   <div>
-                    <p> {foodObj.name} </p>
-                    <img src={foodObj.image} width={100} />
+          <FoodBox foodDetails={foodObj} />
                   </div>
             );
 
